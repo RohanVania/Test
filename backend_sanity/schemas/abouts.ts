@@ -17,6 +17,7 @@ export default{
             name:'imgUrl',
             title:'ImgUrl',
             type: 'image',
+            // Hotspot true is for cropping image
             options: {
               hotspot: true,
             },
