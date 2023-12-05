@@ -1,0 +1,43 @@
+
+.app__about{
+    background-color: red;
+}
+
+.app__about{
+    
+}
+
+.app__profiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.2rem;
+}
+
+.app__profile-item{
+    height: 240px;
+     width: 290px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin: 2.4rem;
+
+     img{
+        width: 100%;
+        height: 176px;
+        object-fit: cover;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width:'2000px') {
+        width: 334px;
+        margin: 2rem 4rem;
+        img{
+            height: 326px;
+        }
+        
+    }
+}
