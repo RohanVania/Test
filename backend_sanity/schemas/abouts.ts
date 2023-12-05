@@ -1,6 +1,6 @@
 export default{
     name:'abouts',
-    title:'Abouts',
+    title:'Abouts',   // Title in Sanity Studio
     type: 'document',
     fields:[
         {
