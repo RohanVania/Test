@@ -1,6 +1,7 @@
 import React from 'react'
 import images from "../../constants/constantsImport"
 import { easeInOut, motion } from "framer-motion"
+import AppWrapper from '../../wrapper/AppWrapper'
 import "./Header.scss"
 
 const scaleVariant = {
@@ -26,7 +27,7 @@ function Header() {
             <motion.div
                 whileInView={{ x: [-200, 0], opacity: [0, 1] }}
                 transition={{ duration: 1.2 }}
-                className='app__header-info'
+                className='app__header-info '
             >
                 {/* Main Badge */}
                 <div className='app__header-badge'>
@@ -62,7 +63,7 @@ function Header() {
                     alt='profile-circle'
                     className='overlay-circle'
                 ></motion.img> */}
-                <img src={images.profile} alt="profile-bg" />
+                <img src={images.profile} alt="profile-bg" className=' tw-ml-[90px]' />
 
                 {/* <motion.img
                     whileInView={{ scale: [0, 1] }}
@@ -97,4 +98,4 @@ function Header() {
     )
 }
 
-export default Header
+export default AppWrapper(Header,'Home')
