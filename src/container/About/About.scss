@@ -16,13 +16,14 @@
 }
 
 .app__profile-item{
-    height: 390px;
-     width: 290px;
+    min-height: 310px;
+    max-height: 390px;
+     max-width: 275px;
      display: flex;
      flex-direction: column;
      justify-content: flex-start;
      align-items: flex-start;
-     margin: 2.4rem;
+     margin: 1.4rem;
 
      img{
         width: 100%;
