@@ -8,12 +8,12 @@ import SocialMedia from '../components/SocialMedia/SocialMedia'
 
 const AppWrapper = (Component, idName, classNames) => function HOC() {
     return (
-        <div id={idName} className={`app__container ${classNames}`}>
-            <SocialMedia />
-            <div className='app__flex app__wrapper '>
+        <div id={idName} className={`app__containe  ${classNames}`}>
+            {/* <SocialMedia /> */}
+            <div className='app__fle app__wrappe '>
                 <Component />
             </div>
-            <NavigationDots active={idName} />
+            {/* <NavigationDots active={idName} /> */}
         </div>
     )
 }
