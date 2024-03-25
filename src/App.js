@@ -1,8 +1,9 @@
 import React from 'react'
-import { About, Footer, Skills, Work, Testimonial, Header } from "./container/containerExports";
+import { About, Footer, Skills, Work, Testimonial, Header} from "./container/containerExports";
 import Navbar from "./components/Navbar/Navbar"
 import "./App.scss"
 import "./index.css"
+
 
 function App() {
     return (
@@ -10,8 +11,8 @@ function App() {
             {/* <Navbar /> */}
             {/* <Header /> */}
             {/* <About /> */}
-            <Work />
-            <Skills />
+            {/* <Work /> */}
+            {/* <Skills /> */}
             <Testimonial />
             <Footer />
         </div>

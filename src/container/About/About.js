@@ -4,12 +4,7 @@ import { fetchAbouts, urlFor } from "../../client"
 import AppWrapper from '../../wrapper/AppWrapper'
 import "./About.scss"
 
-// const abouts = [
-//     { title: 'Software Developer', description: 'I am a proficient developer with a passion for solving complex problems', imgUrl: images.about01 },
-//     { title: 'Data Scientist', description: 'I enjoy using AI and interesting data to create actionable recommendations', imgUrl: images.about02 },
-//     { title: 'Web Develoment', description: 'I am a good web developer.', imgUrl: images.about03 },
-//     { title: 'Leader', description: 'I have a proclivity to bring out the best of people around me', imgUrl: images.about04 },
-// ]
+
 
 function About() {
     const [abouts,setAbouts]=useState([]);    

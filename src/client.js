@@ -12,6 +12,7 @@ const client = createClient({
 const builder = imageUrlBuilder(client)
 
 export function urlFor(source) {
+    console.log(source);
     return builder.image(source)
 }
 
@@ -24,6 +25,7 @@ export async function fetchAbouts() {
 export async function fetchSkills() {
     const query = `*[_type=="skills"]`
     const skillsData = await client.fetch(query);
+    console.log(skillsData)
     return skillsData
 }
 
