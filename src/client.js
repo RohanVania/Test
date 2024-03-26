@@ -29,5 +29,12 @@ export async function fetchSkills() {
     return skillsData
 }
 
+export async function fetchTestimonials(){
+    const query=`*[_type=="testimonials"]`
+    const testimonialsData=await client.fetch(query);
+    console.log("Testimonial Data =>",testimonialsData)
+    return testimonialsData;
+}
+
 
 export default client

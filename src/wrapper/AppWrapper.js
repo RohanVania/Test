@@ -10,7 +10,7 @@ const AppWrapper = (Component, idName, classNames) => function HOC() {
     return (
         <div id={idName} className={`app__container  ${classNames}`}>
             {/* <SocialMedia /> */}
-            <div className='app__flex app__wrapper tw-bg-yellow-200 '>
+            <div className='app__flex app__wrapper  '>
                 <Component />
             </div>
             {/* <NavigationDots active={idName} /> */}
