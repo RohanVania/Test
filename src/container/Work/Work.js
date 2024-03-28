@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import {easeInOut, motion} from "framer-motion"
 import { fetchSkills, urlFor } from "../../client"
 import images from "../../constants/images"
 import AppWrapper from '../../wrapper/AppWrapper'
@@ -25,14 +26,18 @@ function Work() {
                     {/* Skills Div */}
                     <div className='tw-flex sm:tw-max-w-[500px]  tw-flex-wrap tw-gap-x-3 tw-gap-y-4  tw-justify-center md:tw-justify-start  tw-py-[30px] tw-px-[10px] 2xs:tw-px-[20px] '>
                         {
+                            // Each Skill
                             data?.map((el, indx) => {
-                                console.log(el.icon?._upload)
-                                return <div className='tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-y-3  tw-px-3' key={indx}>
+                                return <motion.div className='tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-y-3  tw-px-3 ' key={indx}
+                                    initial={{opacity:0,x:-500,y:-100}}
+                                    whileInView={{opacity:[0,1],x:[-100,0],y:[-100,0]}}
+                                    transition={{duration:0.2,delay:indx*0.14,ease:'linear'}}
+                                >
                                     <div className='tw-w-[70px] tw-h-[70px] sm:tw-w-[80px] sm:tw-h-[80px] tw-bg-[#fff] tw-rounded-full tw-flex tw-flex-col tw-justify-center '>
                                         <img src={urlFor(el?.icon)} className='tw-p-4' />
                                     </div>
                                     <p className=' p-text tw-text-[15px] tw-capitalize '>{el.name}</p>
-                                </div>
+                                </motion.div>
                             })
                         }
 

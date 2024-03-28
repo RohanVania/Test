@@ -37,7 +37,6 @@ function Testimonial() {
                         effect={'creative'}
                         creativeEffect={{
                             prev: {
-                                shadow: true,
                                 translate: ['-200%', 0, -1],
                             },
                             next: {
@@ -51,7 +50,7 @@ function Testimonial() {
                         loop
                         spaceBetween={10}
                         speed={600}
-                        threshold={50}
+                        // threshold={50}
                         modules={[EffectCreative, Navigation]}
                         watchOverflow={true}
 
