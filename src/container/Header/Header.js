@@ -21,7 +21,7 @@ const imagesIcon = [images.flutter, images.redux, images.react]
 
 function Header() {
     return (
-        <div id="home" className='app__header app__flex'>
+        <div id="home" className='app__header app__flex '>
 
             {/* 1st Motion Div */}
             <motion.div
