@@ -19,6 +19,7 @@ module.exports = {
         'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
         '2xl': '1536px',
+        'form-md':'927px'
         // => @media (min-width: 1536px) { ... }
       }
     },
