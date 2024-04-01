@@ -9,7 +9,7 @@ const scaleVariant = {
         scale: [0, 1],
         opacity: [0, 1],
         transition: {
-            duration: 2,
+            duration: 1.2,
             ease: "easeInOut",
         }
     }
@@ -21,7 +21,7 @@ const imagesIcon = [images.flutter, images.redux, images.react]
 
 function Header() {
     return (
-        <div id="home" className='app__header app__flex '>
+        <div id="home" className='app__heade app__flex tw-flex-wrap   tw-overflow-hidden'>
 
             {/* 1st Motion Div */}
             <motion.div
@@ -54,7 +54,7 @@ function Header() {
             <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 1, delayChildren: 1 }}
-                className='app__header-img'
+                className='app__header-img '
             >
                 {/* <motion.img
                     whileInView={{ scale: [0, 1] }}
@@ -63,7 +63,7 @@ function Header() {
                     alt='profile-circle'
                     className='overlay-circle'
                 ></motion.img> */}
-                <img src={images.profile} alt="profile-bg" className=' tw-ml-[90px]' />
+                <img src={images.profile} alt="profile-bg" className='' />
 
                 {/* <motion.img
                     whileInView={{ scale: [0, 1] }}
@@ -81,7 +81,7 @@ function Header() {
             <motion.div
                 variants={scaleVariant}
                 whileInView={scaleVariant.whileInView}
-                className='app__header-circles'
+                className='app__header-circles '
             >
                 {
                     imagesIcon.map((data) =>
@@ -98,4 +98,4 @@ function Header() {
     )
 }
 
-export default AppWrapper(Header,'Home')
+export default AppWrapper(Header,'Home','')

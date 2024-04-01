@@ -29,7 +29,6 @@ function Work() {
                             // Each Skill
                             data?.map((el, indx) => {
                                 return <motion.div className='tw-flex tw-flex-col tw-justify-center tw-items-center tw-gap-y-3  tw-px-3 ' key={indx}
-                                    initial={{opacity:0,x:-500,y:-100}}
                                     whileInView={{opacity:[0,1],x:[-100,0],y:[-100,0]}}
                                     transition={{duration:0.2,delay:indx*0.14,ease:'linear'}}
                                 >
@@ -44,7 +43,13 @@ function Work() {
                     </div>
 
                     {/* Experience Section */}
-                    <div className=' tw-space-y-6 tw-self-center tw-p-5 '>
+                    <motion.div className=' tw-space-y-6 tw-self-center tw-p-5'
+                        whileInView={{opacity:[0,1],x:[150,0]}}
+                        transition={{
+                            duration:0.7,
+                            ease:'linear'
+                        }}
+                    >
 
 
                         {/* Each Experience */}
@@ -73,7 +78,7 @@ function Work() {
                         </div>
 
 
-                    </div>
+                    </motion.div>
 
 
 
