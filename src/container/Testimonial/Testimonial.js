@@ -4,6 +4,7 @@ import { urlFor, fetchTestimonials } from "../../client"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCreative, Navigation } from 'swiper/modules';
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import { motion } from "framer-motion"
 
 import 'swiper/css';
 import 'swiper/css/effect-creative'
@@ -25,7 +26,10 @@ function Testimonial() {
 
     return (
         <>
-            <div id='Testional_Section' className='   tw-w-full tw-h-full tw-px-4'>
+            <motion.div id='Testional_Section' className='   tw-w-full tw-h-full tw-px-4'
+                whileInView={{opacity:[0,1],y:[100,0]}}
+                transition={{duration:0.7, ease:'linear',delay:0.1}}
+            >
                 <div className=''>
                     <h1 className='head-text'>My <span>Interests</span></h1>
                 </div>
@@ -92,7 +96,7 @@ function Testimonial() {
                         <RiArrowRightSLine className='tw-text-[22px]  tw-duration-75' />
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
