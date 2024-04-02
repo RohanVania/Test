@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 function Footer() {
     return (
         <>
-            <motion.div id='footer' className=''
+            <motion.div id='Contact' className=''
                 whileInView={{ opacity: [0, 1], y: [100, 0] }}
                 transition={{ duration: 0.7, ease: 'linear', delay: 0.1 }}
             >
@@ -70,4 +70,4 @@ function Footer() {
     )
 }
 
-export default AppWrapper(Footer, 'Footer', 'tw-bg-white')
+export default AppWrapper(Footer, 'Contact', 'tw-bg-white')

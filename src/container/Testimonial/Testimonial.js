@@ -26,7 +26,7 @@ function Testimonial() {
 
     return (
         <>
-            <motion.div id='Testional_Section' className='   tw-w-full tw-h-full tw-px-4'
+            <motion.div id='Testimonial' className='   tw-w-full tw-h-full tw-px-4  tw-pb-[50px]'
                 whileInView={{opacity:[0,1],y:[100,0]}}
                 transition={{duration:0.7, ease:'linear',delay:0.1}}
             >
@@ -34,7 +34,7 @@ function Testimonial() {
                     <h1 className='head-text'>My <span>Interests</span></h1>
                 </div>
 
-                <div className='tw-bg-[#fff] sm:max:tw-max-w-[1050px] lg:tw-max-w-[950px] tw-w-[400px tw-min-h-[320px]  tw-flex tw-items-center tw-mx-auto tw-mt-[3rem] tw-rounded-lg tw-overflow-hidden tw-shadow-[0_0_30px_rgba(0,0,0,0.1)]'>
+                <div className='tw-bg-[#fff] sm:tw-max-w-[1050px] lg:tw-max-w-[60% tw-w-[400px tw-min-h-[320px]  tw-flex tw-items-center tw-mx-auto tw-mt-[3rem] tw-rounded-lg tw-overflow-hidden tw-shadow-[0_0_30px_rgba(0,0,0,0.1)]'>
 
                     <Swiper className='tw-w-full  tw-h-full tw-overflow-hidden '
                         grabCursor={true}
@@ -101,4 +101,4 @@ function Testimonial() {
     )
 }
 
-export default AppWrapper(Testimonial,'Testimonial')
+export default AppWrapper(Testimonial,'Testimonial','tw-flex-wrap-reverse','testimonial-lg:tw-hidden')

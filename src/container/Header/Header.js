@@ -21,7 +21,7 @@ const imagesIcon = [images.flutter, images.redux, images.react]
 
 function Header() {
     return (
-        <div id="home" className='app__heade app__flex tw-flex-wrap   tw-overflow-hidden'>
+        <div id="home" className='app__heade app__flex tw-flex-wrap   tw-overflow-hidden tw-pt-[70px]'>
 
             {/* 1st Motion Div */}
             <motion.div
