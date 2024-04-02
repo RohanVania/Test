@@ -12,7 +12,7 @@ function App() {
             <Header />
             <About />
             <Work />
-            {/* <Skills /> */}
+            <Skills />
             <Testimonial />
             <Footer />
         </div>
@@ -20,3 +20,4 @@ function App() {
 }
 
 export default App
+// Testing
