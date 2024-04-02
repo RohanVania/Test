@@ -19,7 +19,7 @@ function Work() {
 
     return (
         <>
-            <div className='  tw-w-full'>
+            <div className='tw-w-full'>
                 <h1 className='head-text'>Skills & Experience </h1>
 
                 <div className='tw-flex tw-justify-center   tw-w-full  tw-flex-wrap tw-gap-x-[90px] tw-gap-y-[40px] tw-mt-[3rem]'>

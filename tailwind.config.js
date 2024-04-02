@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'testimonial-lg':{'max':'1210px'},
         'xs':'500px',
         '2xs':'400px',
         '3xs':'300px',

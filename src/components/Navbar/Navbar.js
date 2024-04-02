@@ -5,7 +5,7 @@ import images from "../../constants/constantsImport"
 import { HiMenu, HiX } from "react-icons/hi"
 import { easeOut, motion } from "framer-motion"
 
-const list = ['Home', 'About', "Work", "Projects", "Contact"];
+const list = ['Home', 'About', "Work", "Projects","Testimonial", "Contact"];
 
 function Navbar() {
 
