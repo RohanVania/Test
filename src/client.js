@@ -12,7 +12,6 @@ const client = createClient({
 const builder = imageUrlBuilder(client)
 
 export function urlFor(source) {
-    console.log(source);
     return builder.image(source)
 }
 
@@ -23,17 +22,46 @@ export async function fetchAbouts() {
 }
 
 export async function fetchSkills() {
-    const query = `*[_type=="skills"]`
-    const skillsData = await client.fetch(query);
-    console.log(skillsData)
-    return skillsData
+    try {
+        const query = `*[_type=="skills"]`
+        const skillsData = await client.fetch(query);
+        return skillsData
+    }
+    catch(err){
+        console.log(err);
+    }
 }
 
-export async function fetchTestimonials(){
-    const query=`*[_type=="testimonials"]`
-    const testimonialsData=await client.fetch(query);
-    console.log("Testimonial Data =>",testimonialsData)
-    return testimonialsData;
+export async function fetchTestimonials() {
+    try{
+        const query = `*[_type=="testimonials"]`
+        const testimonialsData = await client.fetch(query);
+        return testimonialsData;
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+
+export async function fetchWorks() {
+    try{
+        const query = `*[_type=="works"]`
+        const workData = await client.fetch(query);
+        return workData
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+
+export async function fetchProjectType(){
+    try{
+        const query=`*[_type=="projecttype"]`
+        const projectType=await client.fetch(query);
+        return projectType
+    }catch(err){
+        console.log(err);
+    }
 }
 
 

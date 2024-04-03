@@ -6,16 +6,7 @@ import "./About.scss"
 
 
 
-function About() {
-    const [abouts, setAbouts] = useState([]);
-    useEffect(() => {
-        async function fetchData() {
-            const SanityData = await fetchAbouts();
-            setAbouts(SanityData)
-            console.log("About Us Data =>", SanityData)
-        };
-        fetchData();
-    }, [])
+function About({element}) {
 
     return (
         <>
@@ -25,7 +16,7 @@ function About() {
             </h2>
             <div className='app__profile tw-mt-[60px] xs:tw-mb-[0px] tw-mb-[40px]  tw-flex tw-flex-wrap tw-justify-center'>
                 {
-                    abouts.map((element, index) => {
+                    element?.map((element, index) => {
                         return (
                                 <motion.div
                                     className='app__profile-item tw-h-full'
@@ -44,8 +35,6 @@ function About() {
                                     </motion.div>
 
                                 </motion.div>
-                              
-                               
                         )
                     })
                 }

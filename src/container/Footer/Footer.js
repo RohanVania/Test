@@ -25,23 +25,23 @@ function Footer() {
                 <div className='tw-px-3'>
                     <div className='tw-flex tw-gap-x-3 tw-gap-y-[40px] tw-justify-center :tw-justify-between md:tw-justify-center sm:tw-gap-x-12 tw-flex-wrap   tw-py-7'>
                         {/* Email Detail */}
-                        <div className='tw-max-w-[290px  tw-bg-[#fef4f5] tw-flex tw-items-center tw-cursor-pointer  tw-gap-x-3 tw-py-[16px] tw-px-[11px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
+                        <a href='mailto:rohan.vania@gmail.com' className='tw-max-w-[290px  tw-bg-[#fef4f5] tw-flex tw-items-center tw-cursor-pointer  tw-gap-x-3 tw-py-[16px] tw-px-[11px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
                             <div className='tw-px-1'>
                                 <img src={email} className='tw-w-[40px] tw-aspect-square ' alt='email' />
                             </div>
                             <p className='tw-text-[15px] tw-font-[400] tw-text-[rgb(107,118,136)]'>
                                 rohan.vania@gmail.com
                             </p>
-                        </div>
+                        </a>
                         {/* Linkedin Detail */}
-                        <div className='tw-max-w-[290px  tw-bg-[#F2F7FB] tw-cursor-pointer tw-flex tw-items-center tw-justify-cente tw-gap-x-3 tw-py-[16px] tw-px-[10px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
+                        <a href='https://www.linkedin.com/in/rohanvania/' target='_blank' className='tw-max-w-[290px  tw-bg-[#F2F7FB]  tw-cursor-pointer tw-flex tw-items-center tw-justify-cente tw-gap-x-3 tw-py-[16px] tw-px-[10px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
                             <div className='tw-px-1'>
                                 <img src={Linkedin} className='tw-w-[40px] tw-aspect-square ' alt='email' />
                             </div>
                             <p className='tw-text-[15px] tw-font-[400] tw-text-[rgb(107,118,136)]'>
                                 rohan.vania@gmail.com
                             </p>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
