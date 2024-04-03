@@ -84,9 +84,9 @@ function Header() {
                 className='app__header-circles '
             >
                 {
-                    imagesIcon.map((data) =>
-                        <div className='circle-cmp app__flex'>
-                            <img src={data} alt="circle" />
+                    imagesIcon.map((data,indx) =>
+                        <div key={indx} className='circle-cmp app__flex'>
+                            <img src={data} alt={`circle-${indx}`} />
                         </div>
                     )
 

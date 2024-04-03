@@ -9,20 +9,11 @@ import { motion } from "framer-motion"
 import 'swiper/css';
 import 'swiper/css/effect-creative'
 import 'swiper/css/navigation'
-import { useQuery } from '@tanstack/react-query';
 import AppWrapper from '../../wrapper/AppWrapper';
 
-function Testimonial() {
+function Testimonial({element}) {
 
     const slideRef = useRef();
-    const { data, isLoading, error } = useQuery({
-        queryKey: ['testimonials'],
-        queryFn: fetchTestimonials,
-        staleTime:Infinity
-    })
-
-    console.log(data)
-
 
     return (
         <>
@@ -54,13 +45,13 @@ function Testimonial() {
                         loop
                         spaceBetween={10}
                         speed={600}
-                        // threshold={50}
+                        // threshold={10}
                         modules={[EffectCreative, Navigation]}
                         watchOverflow={true}
 
                     >
                         {
-                            data?.map((el, indx) => {
+                            element?.map((el, indx) => {
                                 return <SwiperSlide className=' tw-w-full tw-h-full  tw-bg-[#fff] tw-p-[32px]' key={indx}>
                                     <div className='tw-w-full tw-h-full tw-flex tw-flex-col  xs:tw-flex-row tw-gap-y-4  tw-gap-x-4 '>
                                         <div className=' xs:tw-self-center xs:tw-px-0 2xs:tw-px-3'>
