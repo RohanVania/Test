@@ -30,7 +30,7 @@ function Project({ element, btn }) {
             } else {
                 setFilterProject(element.filter((el) => el.tags.includes(customItem)));
             }
-        }, 600);
+        }, 500);
     };
 
     return (
@@ -44,7 +44,7 @@ function Project({ element, btn }) {
                     <div className='tw-flex  tw-justify-center tw-my-5 tw-max-w-[800px] tw-mx-auto tw-flex-wrap tw-items-center tw-gap-x-6 tw-gap-y-4  tw-pt-[30px] 2xs:tw-pt-[0px]'>
                         {
                             btn?.map((item, indx) => {
-                                const activeStyle = activebtn === item ? `tw-bg-[#313bac] tw-text-white` : ``
+                                const activeStyle = activebtn === item.Title ? `tw-bg-[#313bac] tw-text-white` : ``
                                 return <button key={indx} className={`${activeStyle} ${item.Title === 'Accessible' ? 'tw-text-[15.7px]' : ''} tw-rounded-[0.5rem] tw-cursor-pointer tw-font-[800]  md:tw-mt-[20px] md:tw-mb-[15px] tw-px-4 tw-py-3  p-text tw-text-[14px] hover:tw-bg-[#313bac] hover:tw-text-white tw-text-black tw-duration-500`} onClick={() => handleFilter(item.Title)}>
                                     {item.Title}
                                 </button>

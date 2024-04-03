@@ -45,7 +45,6 @@ function App() {
     // console.log("About Data =>",AboutData.data)
     // console.log("Skills Data =>",skillsData.data)
     console.log("Project Type Data =>",projectTypeData.data)
-
     return (
         <div className='app'>
             <Navbar />
@@ -60,4 +59,3 @@ function App() {
 }
 
 export default App
-// Testing

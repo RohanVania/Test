@@ -8,7 +8,7 @@ import SocialMedia from '../components/SocialMedia/SocialMedia'
 
 const AppWrapper = (Component, idName, classNames,extraclassname,element) => function HOC({element,btnTypes}) {
     return (
-        <div id={idName} className={`app__container tw-overflow-hidden    ${classNames}`}>
+        <div id={idName} className={`app__container tw-overflow-hidden tw-pt-10    ${classNames}`}>
             <SocialMedia />
             <div className='app__flex app__wrapper  tw-h-fit'>
                 <Component  element={element} btn={btnTypes} />
