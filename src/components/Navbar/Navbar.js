@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import "./Navbar.scss"
-import images from "../../constants/constantsImport"
+// import images from "../../constants/constantsImport"
+import logo from "../../assets/letterlogo.jpg"
 
 import { HiMenu, HiX } from "react-icons/hi"
-import { easeOut, motion } from "framer-motion"
+import { motion } from "framer-motion"
 
-const list = ['Home', 'About', "Work", "Projects","Testimonial", "Contact"];
+const list = ['Home', 'About', "Work", "Projects", "Testimonial", "Contact"];
 
 function Navbar() {
 
@@ -15,9 +16,11 @@ function Navbar() {
         <nav className='app__navbar'>
 
             {/* Logo */}
-            <div className='app__navbar-logo'>
-                <img src={images.logo} alt="" />
-            </div>
+            <a href='#'>
+                <div className='app__navbar-logo tw-w-[70px]'  >
+                    <img src={logo} alt="logo-image" className='' />
+                </div>
+            </a>
 
             {/* List */}
             <ul className='app__navbar-links'>

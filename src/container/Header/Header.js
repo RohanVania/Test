@@ -1,6 +1,9 @@
 import React from 'react'
-import images from "../../constants/constantsImport"
-import { easeInOut, motion } from "framer-motion"
+import flutter from "../../assets/flutter.png";
+import redux from "../../assets/redux.png";
+import react from "../../assets/react.png"
+import profile from "../../assets/profile.png"
+import { motion } from "framer-motion"
 import AppWrapper from '../../wrapper/AppWrapper'
 import "./Header.scss"
 
@@ -17,7 +20,7 @@ const scaleVariant = {
 
 // Array for Images 
 
-const imagesIcon = [images.flutter, images.redux, images.react]
+const imagesIcon = [flutter, redux, react]
 
 function Header() {
     return (
@@ -63,7 +66,7 @@ function Header() {
                     alt='profile-circle'
                     className='overlay-circle'
                 ></motion.img> */}
-                <img src={images.profile} alt="profile-bg" className='' />
+                <img src={profile} alt="profile-bg" className='' />
 
                 {/* <motion.img
                     whileInView={{ scale: [0, 1] }}
