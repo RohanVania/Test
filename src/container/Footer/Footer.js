@@ -1,8 +1,11 @@
 import React from 'react'
 import email from "../../assets/email.png"
 import Linkedin from "../../assets/Linkedin.png"
+import Phone from "../../assets/Phone.png"
+
 import "./Footer.scss"
 import AppWrapper from '../../wrapper/AppWrapper'
+import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { motion } from "framer-motion"
 
 function Footer() {
@@ -34,12 +37,13 @@ function Footer() {
                             </p>
                         </a>
                         {/* Linkedin Detail */}
-                        <a href='https://www.linkedin.com/in/rohanvania/' target='_blank' className='tw-max-w-[290px  tw-bg-[#F2F7FB]  tw-cursor-pointer tw-flex tw-items-center tw-justify-cente tw-gap-x-3 tw-py-[16px] tw-px-[10px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
+                        <a href='tel:+15488813998' target='_blank' className='tw-max-w-[290px  tw-bg-[#F2F7FB]  tw-cursor-pointer tw-flex tw-items-center tw-justify-cente tw-gap-x-3 tw-py-[16px] tw-px-[10px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
                             <div className='tw-px-1'>
-                                <img src={Linkedin} className='tw-w-[40px] tw-aspect-square ' alt='email' />
+                                <img src={Phone} className='tw-w-[40px] tw-aspect-square ' alt='email' />
+                                {/* <MdOutlinePhoneAndroid className='tw-w-[40px] tw-aspect-square' /> */}
                             </div>
                             <p className='tw-text-[15px] tw-font-[400] tw-text-[rgb(107,118,136)]'>
-                                rohan.vania@gmail.com
+                                +1 548-881-3998
                             </p>
                         </a>
                     </div>
