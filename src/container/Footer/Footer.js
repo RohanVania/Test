@@ -35,7 +35,7 @@ function Footer() {
                             </p>
                         </a>
                         {/* Linkedin Detail */}
-                        <a href='tel:+15488813998' target='_blank' className='tw-max-w-[290px  tw-bg-[#F2F7FB]  tw-cursor-pointer tw-flex tw-items-center tw-justify-cente tw-gap-x-3 tw-py-[16px] tw-px-[10px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
+                        <a href='tel:+15488813998'  className='tw-max-w-[290px  tw-bg-[#F2F7FB]  tw-cursor-pointer tw-flex tw-items-center tw-justify-cente tw-gap-x-3 tw-py-[16px] tw-px-[10px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
                             <div className='tw-px-1'>
                                 <img src={Phone} className='tw-w-[40px] tw-aspect-square ' alt='email' />
                                 {/* <MdOutlinePhoneAndroid className='tw-w-[40px] tw-aspect-square' /> */}

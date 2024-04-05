@@ -18,7 +18,7 @@ function Navbar() {
             {/* Logo */}
             <a href='./'>
                 <div className='app__navbar-logo tw-w-[70px]'  >
-                    <img src={logo} alt="logo-image-1" className='' />
+                    <img src={logo} alt="logo-1" className='' />
                 </div>
             </a>
 

@@ -10,12 +10,12 @@ const ProjectBox = ({ element }) => {
                 <img src={urlFor(element?.imgUrl)} className='tw-w-full tw-h-full tw-object-cover' alt={element.Title} />
                 <div className="tw-opacity-0 tw-bg-[rgba(0,0,0,0.4)] tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center tw-gap-x-8 tw-text-white tw-font-[800] tw-z-100 tw-absolute tw-top-0 tw-bottom-0 hover:tw-opacity-100 tw-duration-300">
                     <div className="tw-bg-[rgba(0,0,0,0.7)] tw-w-[48px] tw-aspect-square tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-scale-[0.78] tw-duration-200">
-                        <a href={element?.projectLink} target="_blank">
+                        <a href={element?.projectLink} target="_blank" rel="noreferrer">
                             <IoEye className="tw-text-[40px] tw-p-[5px]" />
                         </a>
                     </div>
                     <div className="tw-bg-[rgba(0,0,0,0.7)] tw-w-[48px] tw-aspect-square tw-rounded-full tw-flex tw-justify-center tw-items-center hover:tw-scale-[0.78] tw-duration-200">
-                        <a href={element?.codeLink} target="_blank">
+                        <a href={element?.codeLink} target="_blank"  rel="noreferrer" >
                             <FaGithub className="tw-text-[35px] tw-p-[5px]" />
                         </a>
                     </div>

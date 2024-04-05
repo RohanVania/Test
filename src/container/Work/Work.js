@@ -24,7 +24,7 @@ function Work({element}) {
                                     transition={{duration:0.2,delay:indx*0.14,ease:'linear'}}
                                 >
                                     <div className='tw-w-[70px] tw-h-[70px] sm:tw-w-[80px] sm:tw-h-[80px] tw-bg-[#fff] tw-rounded-full tw-flex tw-flex-col tw-justify-center '>
-                                        <img src={urlFor(el?.icon)} className='tw-p-4' />
+                                        <img src={urlFor(el?.icon)} className='tw-p-4' alt='work-1' />
                                     </div>
                                     <p className=' p-text tw-text-[15px] tw-capitalize '>{el.name}</p>
                                 </motion.div>
