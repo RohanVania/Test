@@ -3,10 +3,7 @@ import "./Project.scss"
 import AppWrapper from '../../wrapper/AppWrapper'
 import { motion } from 'framer-motion'
 import ProjectBox from '../../components/ProjectBox/ProjectBox'
-import { useQuery } from '@tanstack/react-query'
-import { queryClient } from '../..'
 
-const buttons = ['Accessible', 'Front End', 'Back End', 'Data Science', 'All']
 
 function Project({ element, btn }) {
 

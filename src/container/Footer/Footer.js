@@ -1,11 +1,9 @@
 import React from 'react'
 import email from "../../assets/email.png"
-import Linkedin from "../../assets/Linkedin.png"
 import Phone from "../../assets/Phone.png"
 
 import "./Footer.scss"
 import AppWrapper from '../../wrapper/AppWrapper'
-import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { motion } from "framer-motion"
 
 function Footer() {
@@ -30,7 +28,7 @@ function Footer() {
                         {/* Email Detail */}
                         <a href='mailto:rohan.vania@gmail.com' className='tw-max-w-[290px  tw-bg-[#fef4f5] tw-flex tw-items-center tw-cursor-pointer  tw-gap-x-3 tw-py-[16px] tw-px-[11px] tw-rounded-lg tw-flex-wrap tw-gap-y-2'>
                             <div className='tw-px-1'>
-                                <img src={email} className='tw-w-[40px] tw-aspect-square ' alt='email' />
+                                <img src={email} className='tw-w-[40px] tw-aspect-square ' alt='email-1' />
                             </div>
                             <p className='tw-text-[15px] tw-font-[400] tw-text-[rgb(107,118,136)]'>
                                 rohan.vania@gmail.com
