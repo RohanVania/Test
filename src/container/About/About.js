@@ -29,7 +29,7 @@ function About({element}) {
                                         whileHover={{ scale: 1.1 }}
                                         transition={{ duration: 0.5, ease: 'linear' }}
                                     >
-                                        <img src={urlFor(element.imgUrl)} alt={`${element.title} image`} />
+                                        <img src={urlFor(element.imgUrl)} alt={`${element.title}-1`} />
                                         <h2 className='bold-text' style={{ marginTop: 10 }}>{element.title}</h2>
                                         <p className='p-text tw-font-[500] md:tw-text-[15px]' style={{ marginTop: 10 }}>{element.description}</p>
                                     </motion.div>

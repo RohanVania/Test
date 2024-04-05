@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import "./Testimonial.scss"
-import { urlFor, fetchTestimonials } from "../../client"
+import { urlFor } from "../../client"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCreative, Navigation } from 'swiper/modules';
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
