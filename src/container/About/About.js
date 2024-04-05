@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { motion } from "framer-motion"
-import { fetchAbouts, urlFor } from "../../client"
+import {  urlFor } from "../../client"
 import AppWrapper from '../../wrapper/AppWrapper'
 import "./About.scss"
 
