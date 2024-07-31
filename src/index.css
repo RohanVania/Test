@@ -23,3 +23,37 @@
    margin: 0;
    scroll-behavior: smooth;
 }
+
+
+.exampleBody {
+   width: 80vw;
+   margin: auto;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   /* background-color: red; */
+ }
+ 
+ .exampleContainer {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 5px;
+ }
+ 
+ .example {
+   width: 80%;
+   /* background-color: #0022FF; */
+   /* stroke: #B937ff; */
+   stroke:#313bac;
+   padding: 4%;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   stroke-dashoffset: 822;
+ 
+ }
