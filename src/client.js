@@ -19,6 +19,7 @@ export async function fetchAbouts() {
     const query = `*[_type=="abouts"]`
     const aboutsData = await client.fetch(query);
     return aboutsData;
+
 }
 
 export async function fetchSkills() {

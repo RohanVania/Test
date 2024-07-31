@@ -22,7 +22,7 @@
     height: 100%;
     flex-direction: row;
   
-    padding: 5rem 2rem 0rem;
+    padding: 5rem 0rem 0rem;
   
     @media screen and (min-width: 2000px) {
       padding-top: 8rem;
@@ -33,7 +33,7 @@
     }
   
     @media screen and (max-width: 450px) {
-      padding: 6rem 1rem 2rem;
+      padding: 6rem 0rem 2rem;
     }
   }
   
@@ -44,22 +44,17 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
+    // margin: 0 2rem;
   
-    margin: 0 2rem;
-  
-    @media screen and (max-width: 1200px) {
-      width: 100%;
-      margin-right: 0rem;
-    }
   }
 
 .app__header-badge{
-    width: 100%;
+    width: fit-content;
     display: flex;
-    align-items: flex-end;
+    // align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column;
-
+    
     .badge-cmp,.tag-cmp{
         position: relative;
         background-color: var(--white-color);

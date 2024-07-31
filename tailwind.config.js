@@ -20,7 +20,10 @@ module.exports = {
         'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
         '2xl': '1536px',
-        'form-md':'927px'
+        'form-md':'927px',
+        '1200':'1200px',
+        '400':'400px',
+        '600':'600px'
         // => @media (min-width: 1536px) { ... }
       }
     },

@@ -2,7 +2,9 @@ import React from 'react'
 import flutter from "../../assets/flutter.png";
 import redux from "../../assets/redux.png";
 import react from "../../assets/react.png"
-import profile from "../../assets/profile.png"
+// import profile from "../../assets/profile.png"
+import profile from "../../assets/removebg.png"
+
 import { motion } from "framer-motion"
 import AppWrapper from '../../wrapper/AppWrapper'
 import "./Header.scss"
@@ -23,17 +25,18 @@ const scaleVariant = {
 const imagesIcon = [flutter, redux, react]
 
 function Header() {
+    
     return (
-        <div id="home" className='app__heade app__flex tw-flex-wrap   tw-overflow-hidden tw-pt-[70px]'>
+        <div id="home" className='app__header app__flex tw-flex-wrap   tw-overflow-hidden '>
 
             {/* 1st Motion Div */}
             <motion.div
                 whileInView={{ x: [-200, 0], opacity: [0, 1] }}
                 transition={{ duration: 1.2 }}
-                className='app__header-info '
+                className='app__header-info  tw-flex '
             >
                 {/* Main Badge */}
-                <div className='app__header-badge'>
+                <div className='app__header-badge 400:tw-ml-auto 600:tw-mx-aut '>
 
                     {/* Badge */}
                     <div className='badge-cmp app__flex'>
@@ -57,26 +60,9 @@ function Header() {
             <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 1, delayChildren: 1 }}
-                className='app__header-img '
+                className='app__header-img tw-object-cover '
             >
-                {/* <motion.img
-                    whileInView={{ scale: [0, 1] }}
-                    transition={{ duration: 1, ease: 'easeInOut' }}
-                    src={images.profile}
-                    alt='profile-circle'
-                    className='overlay-circle'
-                ></motion.img> */}
-                <img src={profile} alt="profile-bg" className='' />
-
-                {/* <motion.img
-                    whileInView={{ scale: [0, 1] }}
-                    transition={{ duration: 0.3 }}
-                    src={images.circle}
-                    alt='profile-circle'
-                    className='overlay-circle'
-                >
-
-                </motion.img> */}
+                <img src={profile} alt="profile-bg" className=' tw-bg-red-40  400:tw-mx-10'  />
 
             </motion.div>
 

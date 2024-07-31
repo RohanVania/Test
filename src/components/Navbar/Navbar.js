@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./Navbar.scss"
-// import images from "../../constants/constantsImport"
 import logo from "../../assets/letterlogo.jpg"
 
 import { HiMenu, HiX } from "react-icons/hi"
